@@ -12,7 +12,6 @@
 		8C806F65283BD7860074FD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C806F64283BD7860074FD5B /* Assets.xcassets */; };
 		8C806F68283BD7860074FD5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C806F67283BD7860074FD5B /* Preview Assets.xcassets */; };
 		8C806F6F283C028E0074FD5B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C806F6E283C028E0074FD5B /* SliderView.swift */; };
-		8C806F71283C04850074FD5B /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C806F70283C04850074FD5B /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		8C806F64283BD7860074FD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C806F67283BD7860074FD5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8C806F6E283C028E0074FD5B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
-		8C806F70283C04850074FD5B /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +56,6 @@
 				8C806F60283BD7820074FD5B /* SliderSwiftUIApp.swift */,
 				8C806F62283BD7820074FD5B /* ContentView.swift */,
 				8C806F6E283C028E0074FD5B /* SliderView.swift */,
-				8C806F70283C04850074FD5B /* CustomSlider.swift */,
 				8C806F64283BD7860074FD5B /* Assets.xcassets */,
 				8C806F66283BD7860074FD5B /* Preview Content */,
 			);
@@ -146,7 +143,6 @@
 				8C806F6F283C028E0074FD5B /* SliderView.swift in Sources */,
 				8C806F63283BD7820074FD5B /* ContentView.swift in Sources */,
 				8C806F61283BD7820074FD5B /* SliderSwiftUIApp.swift in Sources */,
-				8C806F71283C04850074FD5B /* CustomSlider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
