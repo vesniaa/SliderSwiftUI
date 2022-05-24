@@ -21,8 +21,8 @@ struct ContentView: View {
         VStack{
            
             Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
-
-         CustomSlider(sliderValue: $currentValue, target: opacity)
+            
+            CustomSlider(sliderValue: $currentValue, target: opacity)
                 .padding()
             
             Button("Проверь меня") {
@@ -46,7 +46,6 @@ struct ContentView: View {
         return 100 - difference
     }
 }
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
