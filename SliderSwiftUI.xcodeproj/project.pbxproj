@@ -11,7 +11,7 @@
 		8C806F63283BD7820074FD5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C806F62283BD7820074FD5B /* ContentView.swift */; };
 		8C806F65283BD7860074FD5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C806F64283BD7860074FD5B /* Assets.xcassets */; };
 		8C806F68283BD7860074FD5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C806F67283BD7860074FD5B /* Preview Assets.xcassets */; };
-		8C806F6F283C028E0074FD5B /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C806F6E283C028E0074FD5B /* SliderView.swift */; };
+		8C806F6F283C028E0074FD5B /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C806F6E283C028E0074FD5B /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		8C806F62283BD7820074FD5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C806F64283BD7860074FD5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C806F67283BD7860074FD5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8C806F6E283C028E0074FD5B /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		8C806F6E283C028E0074FD5B /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				8C806F60283BD7820074FD5B /* SliderSwiftUIApp.swift */,
 				8C806F62283BD7820074FD5B /* ContentView.swift */,
-				8C806F6E283C028E0074FD5B /* SliderView.swift */,
+				8C806F6E283C028E0074FD5B /* CustomSlider.swift */,
 				8C806F64283BD7860074FD5B /* Assets.xcassets */,
 				8C806F66283BD7860074FD5B /* Preview Content */,
 			);
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C806F6F283C028E0074FD5B /* SliderView.swift in Sources */,
+				8C806F6F283C028E0074FD5B /* CustomSlider.swift in Sources */,
 				8C806F63283BD7820074FD5B /* ContentView.swift in Sources */,
 				8C806F61283BD7820074FD5B /* SliderSwiftUIApp.swift in Sources */,
 			);
@@ -281,6 +281,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

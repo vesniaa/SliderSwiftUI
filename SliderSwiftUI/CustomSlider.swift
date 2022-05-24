@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  CustomSlider.swift
 //  SliderSwiftUI
 //
 //  Created by Евгения Аникина on 23.05.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: UIViewRepresentable {
+struct CustomSlider: UIViewRepresentable {
     
     @Binding var sliderValue: Float
     var target: CGFloat
@@ -37,7 +37,7 @@ struct ContentView: UIViewRepresentable {
 
 }
 
-extension ContentView {
+extension CustomSlider {
     class Coordinator: NSObject {
         @Binding var sliderValue: Float
         
@@ -51,9 +51,8 @@ extension ContentView {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CustomSlider_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(sliderValue: .constant(0.5), target: 50)
+        CustomSlider(sliderValue: .constant(0.5), target: 50)
     }
 }
-
