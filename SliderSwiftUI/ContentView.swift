@@ -7,53 +7,49 @@
 
 import SwiftUI
 
-struct ContentView: UIViewRepresentable {
+struct ContentView: View {
     
-    @Binding var sliderValue: Float
-    var target: CGFloat
+    @State private var targetValue = Int.random(in: 0...100)
+    @State private var currentValue = Float.random(in: 0...100)
+    @State var showResult = false
     
-    func makeUIView(context: Context) -> UISlider {
-        let slider = UISlider()
-        slider.maximumValue = 100
-        slider.minimumValue = 0
+    private var opacity: Double {
+        Double(computeScore())/100
+    }
         
-        slider.addTarget(
-            context.coordinator,
-            action: #selector(Coordinator.sliderMove),
-            for: .valueChanged
-        )
-        
-        return slider
-    }
-    
-    func updateUIView(_ uiView: UISlider, context: Context) {
-        uiView.value = sliderValue
-        uiView.thumbTintColor = .red.withAlphaComponent(target)
-    }
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(sliderValue: $sliderValue)
-    }
+    var body: some View {
+        VStack{
+           
+            Text("Подвиньте слайдер как можно ближе к: \(targetValue)")
 
-}
-
-extension ContentView {
-    class Coordinator: NSObject {
-        @Binding var sliderValue: Float
-        
-        init(sliderValue: Binding<Float>) {
-            self._sliderValue = sliderValue
-        }
-        
-        @objc func sliderMove(_ sender: UISlider) {
-            sliderValue = sender.value
+         CustomSlider(sliderValue: $currentValue, target: opacity)
+                .padding()
+            
+            Button("Проверь меня") {
+                showResult = true
+            }
+                .padding()
+                .alert("Ваш результат", isPresented: $showResult, actions: {}, message: {
+                    Text("\(computeScore())")
+                })
+            
+            Button("Начать заново", action: {
+                    targetValue = Int.random(in: 0...100)
+                    currentValue = Float.random(in: 0...100)
+            })
+                .padding()
         }
     }
+    
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(Double(currentValue)))
+        return 100 - difference
+    }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(sliderValue: .constant(0.5), target: 50)
+        ContentView()
     }
 }
-
